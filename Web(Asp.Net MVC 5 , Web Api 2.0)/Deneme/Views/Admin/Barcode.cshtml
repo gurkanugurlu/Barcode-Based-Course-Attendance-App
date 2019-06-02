@@ -1,0 +1,24 @@
+﻿@using Deneme.Models
+@model  session
+@{
+    ViewBag.Title = "Barcode";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+
+@using (Html.BeginForm("Barcode", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+   
+
+    <div class="form-group" style="padding:20px">
+    <label>Dersleriniz:</label>
+    @Html.DropDownList("lesson_id", (SelectList)ViewBag.lessons, "Oturum Oluşturmak istediğiniz dersinizi seçiniz...", new { @class = "form-control" })
+    </div>
+
+    <div class="card-footer">
+        <button type="submit" class="btn btn-outline-primary">Oturum Oluştur</button>
+    </div>
+}
+
+
+
+

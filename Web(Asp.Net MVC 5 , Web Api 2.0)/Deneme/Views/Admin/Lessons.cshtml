@@ -1,0 +1,59 @@
+﻿@using Deneme.Models;
+@model List<lesson>
+@{
+    ViewBag.Title = "Lessons";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+       
+            <div class="content">
+                <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title"><b>Öğrenciler</b></h3>
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body p-0" style="display: block;">
+                        <table class="table table-bordered table-hover" style="font-size:15px">
+                            <thead>
+                                <tr>
+
+                                    <th><img src="~/Content/Images/checked.png" />Ders No</th>
+                                    <th><img src="~/Content/Images/id.png" />Ders Ad</th>
+                                    <th><img src="~/Content/Images/users.png" />Ders Öğretmen Bilgisi</th>
+                                    <th><img src="~/Content/Images/factory.png" />Fakülte Bilgisi</th>
+                                    <th><img src="~/Content/Images/stopwatch.png" />Ders Başlangıç Saati:</th>
+                                    <th><img src="~/Content/Images/stopend.png" />Ders Bitiş Saati:</th>
+                                    <th><img src="~/Content/Images/faq.png" />Detay</th>
+
+
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                                @foreach (lesson lesson in Model)
+                                {
+                                    <tr>
+                                        <td>@lesson.lesson_id</td>
+                                        <td>@lesson.lesson_name</td>
+                                        <td>@lesson.teacher.teacher_name @lesson.teacher.teacher_surname </td>
+                                        <td>@lesson.departmant.departman_name</td>
+                                        <td>@lesson.lesson_onset_time</td>
+                                        <td>@lesson.lesson_expiration_time</td>
+                                        
+                                        <td>
+                                            <a title="Ogrencileri Gor" class="btn btn-outline-secondary" href="/Admin/UserInf/@lesson.lesson_id?==lessonId">
+                                                <i class="fa fa-user"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                </div>
+  
+ 
+

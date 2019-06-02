@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="482e8a4cf2ad45c2985b8b9c5863df16" Name="Diagram1">
+        <EntityTypeShape EntityType="barkode_projectModel.barcode" Width="1.5" PointX="3" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.departmant" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.history" Width="1.5" PointX="7.5" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.lesson" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.session" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.student" Width="1.5" PointX="5.25" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.student_lesson" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="barkode_projectModel.teacher" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="barkode_projectModel.FK_session_barcode" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_lesson_departmant" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_history_session" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_history_student" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_lesson_teacher" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_session_lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_student_lesson_lesson" ManuallyRouted="false" />
+        <AssociationConnector Association="barkode_projectModel.FK_student_lesson_student" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="barkode_projectModel.rate" Width="1.5" PointX="3.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,63 @@
+﻿@using Deneme.Models
+@model List<session>
+@{
+    ViewBag.Title = "Sessions";
+    Layout = "~/Views/Shared/_LayoutYonetici.cshtml";
+}
+<div class="content">
+    <div class="card">
+
+        <div class="card-header">
+            <h3 class="card-title"><b>Öğrenciler</b></h3>
+
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body p-0" style="display: block;">
+            <table class="table table-bordered table-hover" style="font-size:15px">
+                <thead>
+                    <tr>
+
+                        <th><img src="~/Content/Images/checked.png" />Id</th>
+                        <th><img src="~/Content/Images/id.png" />Ders Adı</th>
+                        <th><img src="~/Content/Images/qr.png" />Barkod İçerik</th>
+                        <th><img src="~/Content/Images/stopwatch.png" />Başlangıç Zamanı</th>
+                        <th><img src="~/Content/Images/stopend.png" />Bitiş Zamanı </th>
+                       
+                        <th><img src="~/Content/Images/faq.png" />Detaylar</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (session session in Model)
+                    {
+                        <tr>
+                            <td>@session.session_id</td>
+                            <td>@session.lesson.lesson_name</td>
+                            <td>@session.session_content </td>
+                            <td>@session.session_onset_time</td>
+                            <td>@session.session_expiration_time</td>
+                          
+
+                            <td>
+                                <a title="Öğrencileri Gör" class="btn btn-outline-primary" href="/Admin/SessionInf/@session.session_id">
+                                    <i class="fa fa-user"></i>
+                                </a>
+                                <a title="Detay" class="btn btn-outline-secondary" href="/Admin/BarcodeFinder/@session.session_id">
+                                    <i class="fa fa-qrcode"></i>
+                                </a>
+
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+</div>
+
+
+
+
