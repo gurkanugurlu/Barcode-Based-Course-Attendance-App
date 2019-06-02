@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="margin_8dp">8dp</dimen>
+    <dimen name="margin_30dp">30dp</dimen>
+    <dimen name="margin_15dp">15dp</dimen>
+    <dimen name="elevation_4dp">4dp</dimen>
+    <dimen name="layout_height_350dp">350dp</dimen>
+    <dimen name="layout_weight_350dp">350dp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="margin_20dp">20dp</dimen>
+    <dimen name="text_size_20dp">20sp</dimen>
+    <dimen name="margin_10dp">10dp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="layout_width_150dp">150dp</dimen>
+    <dimen name="layout_height_150dp">150dp</dimen>
+    <dimen name="layout_height_2dp">2dp</dimen>
+    <dimen name="margin_5dp">5dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+</resources>

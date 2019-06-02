@@ -1,0 +1,46 @@
+<resources>
+    <string name="user_name">Kullanıcı Adı</string>
+    <string name="user_password">Şifreniz</string>
+    <string name="login">Giriş</string>
+
+    <string name="navigation_drawer_open">Navigasyon çekmecesi açık</string>
+    <string name="navigation_draver_closed">Navigasyon çekmecesi kapalı</string>
+
+    <string name="ok">OK</string>
+    <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="title_activity_main">Barcode Reader Sample</string>
+    <string name="barcode_header">Click &quot;Read Barcode&quot; to read a barcode</string>
+    <string name="read_barcode">Read Barcode</string>
+    <string name="auto_focus">Auto Focus</string>
+    <string name="use_flash">Use Flash</string>
+    <string name="barcode_success">Barcode read successfully</string>
+    <string name="barcode_failure">No barcode captured</string>
+    <string name="barcode_error">"Error reading barcode: %1$s"</string>
+    <string name="imageContentDesc">HERE</string>
+    <string name="user_image">Kullanıcı Resmi</string>
+    <string name="quit_menu">çıkış</string>
+    <string name="settings_menu">Ayarlar</string>
+    <string name="feedback_menu">Feedback</string>
+    <string name="rate_app">Uygulamayı değerlendirir misiniz?</string>
+    <string name="thanks_message">Değerlendirdiğiniz için teşekkürler...</string>
+    <string name="rate_choice">Gönder</string>
+    <string name="checkbox">Sifre hatırla</string>
+    <string name="nav_here">!here</string>
+    <string name="nav_lesson">Dersler</string>
+    <string name="nav_history">Geçmiş</string>
+    <string name="nav_profile">Profil</string>
+    <string name="nav_others">Diğer</string>
+    <string name="nav_exit">Çıkış</string>
+    <string name="check_box_pass">Sifremi hatırla</string>
+    <string name="check_box_acc">Oturum açık kalsın</string>
+    <string name="profile_pass_change">Degiştir</string>
+    <string name="profile_student_no">Öğrenci No :</string>
+    <string name="profile_name_surname">Ad - Soyad :</string>
+    <string name="profile_password_change">Sifre Değiştirme</string>
+    <string name="profile_new_password_hint">Yeni Sifre</string>
+    <string name="profile_old_password_hint">Eski Şifre</string>
+    <string name="profil_image">Profil Fotoğrafı</string>
+
+</resources>
